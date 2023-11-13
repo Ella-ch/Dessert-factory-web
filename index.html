@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Xinyi Chen">
+    <meta name="keywords" content="Happy Day Dessert Factory">
+    <meta name="description" content="Happy Day Dessert Factory's website">
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    
+    <script src="js/jquery-3.6.4.min.js"> </script>
+    <script src="js/scripts.js"> </script>
+    <title>Home page of Happy Day Dessert Factory</title>
+</head>
+
+<body>
+
+    <header>
+        <img class="logo" src="images/logo.png" alt="Photo of Happy Day Dessert Factory's logo">
+        <a href="#" class="logo">Happy Day Dessert Factory</a>
+
+        <nav class="navbar">
+            <ul>
+                <li><a class="selected" href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="promotions.html">Promotions</a></li>
+                <li><a href="#">About</a>
+                    <ul>
+                        <li><a href="story.html"> Our story</a></li>
+                        <li><a href="location.html">Location and hours</a></li>
+                        <li><a href="contact_us.html"> Contact Us</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="container">
+        <div class="slider">
+            <div id="temp">
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <div class="slide first">
+                        <img src="images/slides/slide1.jpg" alt="photo of ice cream">
+                    </div>
+                    <div class="slide">
+                        <img src="images/slides/slide2.jpg" alt="photo of ice cream">
+                    </div>
+                    <div class="slide">
+                        <img src="images/slides/slide3.jpg" alt="photo of ice cream">
+                    </div>
+                    <div class="slide">
+                        <img src="images/slides/slide4.jpg" alt="photo of ice cream">
+                    </div>
+
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+                    <div class="navigation-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
+                    </div>
+                </div>
+                <button class="button" id="btn1" onclick="window.open('menu.html')">Menu</button>
+                <button class="button" id="btn2" onclick="window.open('contact_us.html')">Find us</button>
+            </div>
+        </div>
+        
+        <script>
+            var counter = 2;
+            setInterval(function() {
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if(counter > 4) {
+                    counter = 1;
+                }
+            }, 3000);
+        </script>
+
+        <div id="homepage"> 
+            <img src="images/pexels-lukas-1352278.jpg" alt="photo">
+            <button class="btn" onclick="window.open('menu.html')">Menu</button>
+            <div id="text4">Our Flavors</div>
+            <div id="text5"><strong>
+                Happy Day Dessert Factory is located on the North Side of Pittsburgh. Our menu includes:
+            </strong></div>
+            <ul>
+                <li>50+ flavors of <strong>Premium Homemade Hard Ice Cream</strong></li>
+                <li>13 flavors of <strong>Water Ice</strong></li>
+                <li><strong>Frozen Soft Custard</strong></li>
+                <li>Frozen <strong>Yogurt</strong></li>
+                <li>Almond Milk Soft Serve</li>
+            </ul>
+            <p><strong>
+                Obviously we have your classic favorites of Vanilla,
+                Chocolate, Strawberry, etc... every day, but check out
+                our menu for some of our lesser known flavors that are
+                sure to become your new favorite.
+            </strong></p>
+        </div>
+
+        <div class="video">
+            <video src="./images/video.mp4" width="1425" height="860" autoplay controls></video>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <h3>Find Us on Social Media!</h3>
+            <p>Curabitur viverra porttitor ante eleifend malesuada. Nulla ultricies dolor id urna aliquet porta. Ut vel feugiat ipsum! </p>
+            <ul class="socials">
+                <li><a href="https://www.facebook.com/happydaydessertfactory/"><img src="images/facebook.png" alt="facebook Icon"></a></li>
+                <li><a href="https://www.instagram.com/happydaydessertfactory/?hl=en"><img src="images/instagram.png" alt="instagram Icon"></a></li>
+                <li><a href="mailto:info@happydaydessertfactory.com"><img src="images/email.png" alt="mail Icon"></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2023. designed by <span>Xinyi</span></p>
+        </div>
+    </footer>
+</body>
+</html>
