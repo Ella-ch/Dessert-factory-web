@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Xinyi Chen">
+    <meta name="keywords" content="Happy Day Dessert Factory">
+    <meta name="description" content="Happy Day Dessert Factory's website">
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    
+    <script src="js/jquery-3.6.4.min.js"> </script>
+    <script src="js/scripts.js"> </script>
+    <title>contact page of Happy Day Dessert Factory</title>
+</head>
+
+<body>
+    
+    <header>
+        <img class="logo" src="images/logo.png" alt="Photo of Happy Day Dessert Factory's logo">
+        <a href="#" class="logo">Happy Day Dessert Factory</a>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="promotions.html">Promotions</a></li>
+                <li><a class="selected" href="#">About</a>
+                    <ul>
+                        <li><a href="story.html"> Our story</a></li>
+                        <li><a href="location.html">Location and hours</a></li>
+                        <li><a class="selected" href="contact_us.html"> Contact Us</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="contact-info">
+        <h4 class="contact-heading">
+            Contact
+        </h4>
+        <h5>
+            Phone
+        </h5>
+        <p>Our customer service representatives are ready to take your calls for orders or questions.</p><br>
+        <p>US: +1 000-000-0000</p>
+        <p>Canada: +1 000-000-0000</p>
+
+        <h5>
+            Email
+        </h5>
+        <p>For customer service inquiries please email <a href="mailto:info@happydaydessertfactory.com">info@happydaydessertfactory.com</a>.</p>
+        
+        <h5>
+            Contact form
+        </h5>
+        <p>We look forward to know more about you!</p>
+    </div>
+
+    <div class="contact-form">
+        <form onsubmit="return validate()" action="mailto:info@happydaydessertfactory.com">
+        <fieldset>
+            <legend>Tell us more about you!</legend>
+            <label for="name">Name (required):</label><br>
+            <input type="text" required id="name" name="name" value="Your Name" size="20" maxlength="250"><br><br>
+            <label for="zip">Your zip code (optional):</label><br>
+            <input type="text" id="zip" name="zip" size="20" value="" pattern="\d{5,5}(-\d{4,4})?"><br><br>
+
+            <strong>Do you want to subscribe to our newsletter?</strong><br><br>
+            <input type="checkbox" id="update" name="update" value="yes">Yes, I want to!<br><br>
+
+            <label for="email_address">Please provide your email address (required)</label><br>
+            <input type="email" required id="email_address" name="email_address" placeholder="abc@defg.com" pattern="[^@\s]+@[^@\s]+\.[^@\s]+"><br><br>
+            </fieldset>
+            <fieldset>
+            <input type="image" src="images/submit.png" alt="Submit" name="btnimage">
+        </fieldset>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Find Us on Social Media!</h3>
+            <p>Curabitur viverra porttitor ante eleifend malesuada. Nulla ultricies dolor id urna aliquet porta. Ut vel feugiat ipsum! </p>
+            <ul class="socials">
+                <li><a href="https://www.facebook.com/happydaydessertfactory/"><img src="images/facebook.png" alt="facebook Icon"></a></li>
+                <li><a href="https://www.instagram.com/happydaydessertfactory/?hl=en"><img src="images/instagram.png" alt="instagram Icon"></a></li>
+                <li><a href="mailto:info@happydaydessertfactory.com"><img src="images/email.png" alt="mail Icon"></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2023. designed by <span>Xinyi</span></p>
+        </div>
+    </footer>
+
+</body>
+</html>
